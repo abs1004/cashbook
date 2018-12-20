@@ -13,8 +13,6 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/app.js') }}"></script>
-
     <style>
         body{
             font-family: sans-serif;
@@ -30,6 +28,13 @@
         }
         ul{
             padding: 0 0;
+        }
+
+        .panel-heading select{
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            margin: 0;
         }
         .li-edit{
             list-style: none;
@@ -59,17 +64,15 @@
 
 </head>
 <body>
-    <div id="app">
+
+    <div id="app1">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-user" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        {{--<span class="sr-only">Toggle Navigation</span>--}}
-                        {{--<span class="icon-bar"></span>--}}
-                        {{--<span class="icon-bar"></span>--}}
-                        {{--<span class="icon-bar"></span>--}}
+
                     </button>
 
                     <!-- Branding Image -->
@@ -114,6 +117,7 @@
 
         @yield('content')
     </div>
-
+    <div id="app"></div>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
