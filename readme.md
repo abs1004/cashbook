@@ -1,7 +1,7 @@
 Usage:
 Record your daily expenses.
 
-Evirenment:
+Environment:
 Php Mysql JQuery
 
 MVC:
